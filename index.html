@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  >
+  <title>Bubble</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="notice">
+    모든 주제는 24시간 후 사라집니다.
+  </div>
+
+  <div id="world"></div>
+
+  <button id="addBtn">+</button>
+
+  <!-- 글 작성창 -->
+  <div id="writeSheet">
+
+    <div id="handle"></div>
+
+    <h2>새 주제</h2>
+
+    <input
+      id="titleInput"
+      type="text"
+      maxlength="30"
+      placeholder="메인 주제를 입력하세요"
+    >
+
+    <textarea
+      id="detailInput"
+      maxlength="300"
+      placeholder="세부 내용을 입력하세요"
+    ></textarea>
+
+    <button id="submitBtn">
+      올리기
+    </button>
+
+  </div>
+
+  <!-- 댓글창 -->
+  <div id="commentOverlay">
+
+    <div id="commentSheet">
+
+      <div id="commentHandle"></div>
+
+      <h2 id="postTitle"></h2>
+
+      <p id="postDetail"></p>
+
+      <div id="comments"></div>
+
+      <div id="commentInputArea">
+        <input
+          id="commentInput"
+          placeholder="댓글을 입력하세요."
+        >
+
+        <button id="commentBtn">
+          등록
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script type="module" src="script.js"></script>
+
+</body>
+</html>
+
